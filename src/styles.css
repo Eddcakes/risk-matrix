@@ -1,0 +1,61 @@
+.App {
+  font-family: sans-serif;
+}
+
+#cats,
+#likes {
+  border: 1px solid #a0a0a0;
+}
+
+.row {
+  display: flex;
+}
+
+.level,
+.word-model,
+.likelihood {
+  width: 150px;
+}
+
+.risk-matrix {
+  margin: 50px;
+}
+
+.risk-matrix button {
+  height: 50px;
+  width: 50px;
+}
+
+.risk-matrix .high {
+  background-color: red;
+}
+.risk-matrix .medium {
+  background-color: orange;
+}
+.risk-matrix .low {
+  background-color: green;
+}
+
+.value {
+  border: 1px solid red;
+  height: 1em;
+  width: 3em;
+  padding: 0.2em;
+}
+
+.y-axis .y-title, .y-axis .y-desc {
+  width: 150px;
+}
+
+/* 
+add some css for showing category/likelihood titles
+options
+maybe show text all the time in accessability?
+on hover of cell show the category/likelihood title
+*/
+
+.ra-container .btn-row {
+  height: 10em;
+  width: 10em;
+  text-transform: uppercase;
+}

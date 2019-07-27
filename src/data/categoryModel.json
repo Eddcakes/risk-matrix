@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "title": "not significant",
+    "wordModel": "a descrption of not significant",
+    "value": 1
+  },
+  {
+    "id": 1,
+    "title": "minor",
+    "wordModel": "a descrption of minor",
+    "value": 2
+  },
+  {
+    "id": 2,
+    "title": "moderate",
+    "wordModel": "a descrption of moderate",
+    "value": 3
+  },
+  {
+    "id": 3,
+    "title": "severe",
+    "wordModel": "a descrption of severe",
+    "value": 4
+  },
+  {
+    "id": 4,
+    "title": "major",
+    "wordModel": "a descrption of major",
+    "value": 5
+  },
+  {
+    "id": 5,
+    "title": "catastrophic",
+    "wordModel": "a descrption of catastrophic",
+    "value": 6
+  }
+]

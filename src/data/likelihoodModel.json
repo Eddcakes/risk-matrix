@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "title": "extremely unlikely",
+    "wordModel": "a descrption of extremely unlikely",
+    "value": 1
+  },
+  {
+    "id": 1,
+    "title": "very unlikely",
+    "wordModel": "a descrption of very unlikely",
+    "value": 2
+  },
+  {
+    "id": 2,
+    "title": "unlikely",
+    "wordModel": "a descrption of unlikely",
+    "value": 3
+  },
+  {
+    "id": 3,
+    "title": "unlikely",
+    "wordModel": "another description of unlikely",
+    "value": 3
+  },
+  {
+    "id": 4,
+    "title": "possible",
+    "wordModel": "a descrption of not possible",
+    "value": 4
+  },
+  {
+    "id": 5,
+    "title": "probable",
+    "wordModel": "a descrption of probable",
+    "value": 5
+  },
+  {
+    "id": 6,
+    "title": "regular",
+    "wordModel": "a descrption of regular",
+    "value": 6
+  }
+]
