@@ -54,7 +54,7 @@ maybe show text all the time in accessability?
 on hover of cell show the category/likelihood title
 */
 
-.ra-container .btn-row {
+.ra-container .btn-row button{
   height: 10em;
   width: 10em;
   text-transform: uppercase;
