@@ -16,7 +16,7 @@ function Matrix({accessability, y, x, boundries, onClick}){
   //history should be a state so we can keep track of it here, how will we control this by checkbox tho
   
   return (
-    <React.Fragment>
+    <div className="matrix">
       {y.map( category => {
         return (
           <div className="btn-row">
@@ -34,7 +34,7 @@ function Matrix({accessability, y, x, boundries, onClick}){
             })}
           </div>)
       })}
-    </React.Fragment>
+    </div>
   )
 }
 
