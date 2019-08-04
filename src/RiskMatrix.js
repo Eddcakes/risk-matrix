@@ -3,7 +3,7 @@ import React from "react";
 import categories from "./data/categoryModel";
 import likelihoods from "./data/likelihoodModel";
 
-
+import './RiskMatrix.css';
 
 function RiskMatrix({ lower, upper, boundries}) {
   /* 

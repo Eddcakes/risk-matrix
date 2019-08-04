@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+}
+
+.level,
+.word-model,
+.likelihood {
+  width: 150px;
+}
+
+.risk-matrix {
+  margin: 50px;
+}
+
+.risk-matrix button {
+  height: 50px;
+  width: 50px;
+}
+
+.risk-matrix .high {
+  background-color: red;
+}
+.risk-matrix .medium {
+  background-color: orange;
+}
+.risk-matrix .low {
+  background-color: green;
+}
+
+#cats,
+#likes {
+  border: 1px solid #a0a0a0;
+}

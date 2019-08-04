@@ -2,40 +2,6 @@
   font-family: sans-serif;
 }
 
-#cats,
-#likes {
-  border: 1px solid #a0a0a0;
-}
-
-.row {
-  display: flex;
-}
-
-.level,
-.word-model,
-.likelihood {
-  width: 150px;
-}
-
-.risk-matrix {
-  margin: 50px;
-}
-
-.risk-matrix button {
-  height: 50px;
-  width: 50px;
-}
-
-.risk-matrix .high {
-  background-color: red;
-}
-.risk-matrix .medium {
-  background-color: orange;
-}
-.risk-matrix .low {
-  background-color: green;
-}
-
 .value {
   border: 1px solid red;
   height: 1em;
@@ -54,8 +20,17 @@ maybe show text all the time in accessability?
 on hover of cell show the category/likelihood title
 */
 
-.ra-container .btn-row button{
-  height: 10em;
-  width: 10em;
+.ra-container .btn-row button {
+  height: 7rem;
+  width: 7rem;
+  word-spacing: 7rem;
+/*   text-align: center; */
+}
+
+.ra-container .btn-row button span {
   text-transform: uppercase;
+  /* text-align: -webkit-center; */
+  width: 7em; /* setting width as em here means we dont have to use the -webkit-center */
+  display: table-caption;
+  user-select: none;
 }
