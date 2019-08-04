@@ -3,7 +3,6 @@ import React from 'react';
 function RiskButton({category, likelihood, boundries, accessability, onClick}) {
   const riskValue = category.value * likelihood.value  
   //work out button style 
-    
   let hue
   if (riskValue < boundries[0]){
     hue = 120
@@ -12,6 +11,7 @@ function RiskButton({category, likelihood, boundries, accessability, onClick}) {
   }else {
     hue = 0
   }
+  //maybe reverse map so i can check if value is under and change rather than forwards it wil always change to higher risk
 /*  boundries.map( (boundry, index) => {
     const bLength = boundries.length
     const compHue = 120 / (bLength + 1)
