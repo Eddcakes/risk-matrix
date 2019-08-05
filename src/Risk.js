@@ -32,9 +32,8 @@ function Risk({ boundries }) {
           x={likelihoods} 
           boundries={boundries} 
           onClick={riskClick}
-          /* currentSelected={selected.value} 
+          currentSelected={selected} 
           //want a nicer way this will act as liike last selected
-          */
         />
       </div>
       <div className="value">{selected.value}</div>

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 //boundries 9, 23
-function RiskButton({category, likelihood, boundries, accessability, onClick, currentSelected}) {
+function RiskButton({category, likelihood, boundries, accessability, onClick, lastSelected}) {
   const [isHover, setIsHover] = useState(false)
   const toggle = () => setIsHover(!isHover)
   const btnName = `c${category.id}l${likelihood.id}`
@@ -19,6 +19,9 @@ function RiskButton({category, likelihood, boundries, accessability, onClick, cu
     //orange is 30
     //yellow is 60
     //green 120
+    
+    //console.log(btnName, lastSelected.name > 0 ? lastSelected.name : '')
+    //console.log(lastSelected)
     return (
         <button 
           type="button"
@@ -32,8 +35,7 @@ function RiskButton({category, likelihood, boundries, accessability, onClick, cu
       >
         <span>
         {/*accessability ? `${category.title} - ${likelihood.title}` : ''*/}
-         {/*  {isHover ? `${category.title} - ${likelihood.title}` : ''} */}
-          {isHover ? `${category.title} - ${likelihood.title}` : ''}
+          { lastSelected === btnName || isHover ? `${category.title} - ${likelihood.title}` : ''  }
         </span>
       </button>
     )

@@ -8,18 +8,18 @@ then can assign risks to that button
 rather than press a button to get the score out
 */
 
-function Matrix({accessability, y, x, boundries, onClick}){
+function Matrix({accessability, y, x, boundries, onClick, currentSelected}){
   //get boundries
   const bDetails = boundries.sort((a, b) => a - b)
-  //probably use inline styles for changing risk level
-  //hsl(35, 100%, 50%)
-  //history should be a state so we can keep track of it here, how will we control this by checkbox tho
-  
+  //history should be a state so we can keep track of it here, how will we control this by checkbox tho?
+  const selectedName = currentSelected !== ""
+  ? currentSelected.name
+  : ""
   return (
     <div className="matrix">
       {y.map( category => {
         return (
-          <div className="btn-row">
+          <div className="btn-row" key={`y${category.id}`}>
             {x.map( likelihood => {
               return (
                 <RiskButton 
@@ -29,6 +29,7 @@ function Matrix({accessability, y, x, boundries, onClick}){
                   boundries={bDetails} 
                   onClick={onClick} 
                   accessability={accessability}
+                  lastSelected={selectedName}
                 /> 
               )
             })}
