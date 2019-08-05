@@ -5,7 +5,7 @@ function LabelsY({data}){
     <div className="y-axis">
       {data.map( category => {
         return (
-          <React.Fragment>
+          <React.Fragment key={`y${category.id}`}>
             <div className="y-title">
               {category.title}
             </div>

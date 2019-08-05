@@ -5,7 +5,7 @@ function LabelsX({data}){
     <div className="x-axis">
       {data.map( likelihood => {
         return (
-          <React.Fragment>
+          <React.Fragment key={`x${likelihood.id}`}>
             <div className="x-title">
               {likelihood.title}
             </div>
