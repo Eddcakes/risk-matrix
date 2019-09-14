@@ -10,9 +10,9 @@ import likesData from "./data/likelihoodModel";
 //when hovering on button should make category + likelihood selected bold
 function Risk({ boundries }) {
   const [selected, setSelected] = useState('')
-  const categories = catsData //.reverse();
+  let categories = catsData //.reverse();
   const likelihoods = likesData;
-
+  categories.reverse()
 /*   const mekBounds = boundries.map(item => {
     return <div>item: {item}</div>;
   }); */

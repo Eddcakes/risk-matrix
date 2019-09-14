@@ -19,9 +19,7 @@ function RiskButton({category, likelihood, boundries, accessability, onClick, la
     //orange is 30
     //yellow is 60
     //green 120
-    
-    //console.log(btnName, lastSelected.name > 0 ? lastSelected.name : '')
-    //console.log(lastSelected)
+
     return (
         <button 
           type="button"
